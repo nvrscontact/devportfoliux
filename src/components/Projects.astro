@@ -1,0 +1,43 @@
+---
+interface Props{
+    title?: string
+    paragraph?: string
+    width?: string
+    height?: string
+    ground_img?: string
+    ground_height?: string 
+    icon_span_one?: string
+    icon_span_two?: string
+    icon_span_three?: string
+    link?: string
+    link_img?: string
+    shadow?: string
+
+ 
+}
+const {title,paragraph,width='w-[190px]',height='h-[265px]', ground_img,ground_height,icon_span_one,icon_span_two,icon_span_three,link,link_img,shadow}  = Astro.props
+---
+
+
+
+<section class=`dark:border-black flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0 `>
+    <section class="dark:border-black flex flex-col text-center border-b border-white/30 h-24 p-2 ">
+        <section class="flex justify-center items-center">
+            <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>        
+        </section>
+        <p class="dark:text-black text-[12px] text-[#bebebe] whitespace-normal">{paragraph}</p>
+    </section>
+    <section class="dark:border-black border-b border-white/30 p-[2px] ">
+        <img src={ground_img} alt="" class=`${ground_height}`>
+    </section>
+    <section class="flex justify-between items-center p-[10px] ">
+        <span class="flex gap-2">
+            <img src={icon_span_one} alt="" class="h-[18px]">
+            <img src={icon_span_two} alt="" class="h-[18px]">
+            <img src={icon_span_three} alt="" class="h-[18px]">
+        </span>
+        <span>
+            <a href={link}><img src={link_img} alt="" class="h-[16px] "></a>
+        </span>
+    </section>
+</section>

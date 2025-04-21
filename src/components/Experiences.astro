@@ -1,0 +1,67 @@
+---
+import Exp_Comp from "../components/Exp_Comp.astro"
+---
+
+<section class="flex flex-col w-[260px]">
+        <section class="flex flex-col p-3 justify-center items-center border border-white/30 rounded-xl mx-2">
+            <span class="text-[22px] tracking-[-1px]
+            font-[Manrope] drop-shadow-[0_0_14px_rgba(244,244,244,0.6)]">Experiences</span>
+        </section>
+        <section class="dark:border-black">
+            <section class="scrolls_bar flex flex-col py-2 gap-16">
+                <Exp_Comp 
+            company='Apple Inc',
+            others="Technology"
+            dates='2020 • 2022',
+            workstation='iOS Developer',
+            paragraph=`Working and collaborating in the development of a multiplatform application for the management of the company's internal products`,
+            paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
+            
+            country='assets/uk.svg',
+            improvements="+20% users"
+            language_one="assets/python.svg",
+            language_two="assets/fastapi.svg",
+            language_three="assets/tailwind.png"
+            /> 
+           
+            <Exp_Comp 
+            company='Microsoft',
+            others="Corporation"
+            dates='2013 • 2017',
+            workstation='Frontend Developer',
+            paragraph=`Working and collaborating in the development of a multiplatform application for the management of the company's internal products.`,
+            paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
+            
+            country='assets/usa.svg',
+            improvements="+15k visits"
+            language_one="assets/python.svg",
+            language_two="assets/fastapi.svg",
+            language_three="assets/tailwind.png"
+
+
+            /> 
+          
+            <Exp_Comp 
+            company='Microsoft',
+            others="Technology"
+
+            dates='2013 • 2017',
+            workstation='Frontend Manager',
+            paragraph=`Working and collaborating in the development of a multiplatform application for the management of the company's internal products.`,
+            paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
+            
+            country='assets/spain.svg',
+            improvements="+20% performance"
+            language_one="assets/python.svg",
+            language_two="assets/fastapi.svg",
+            language_three="assets/tailwind.png"
+                    
+            /> 
+        </section>
+
+        </section>
+    <section class="border border-white/30 rounded-xl p-2 flex items-center gap-2 justify-center mx-2">
+        <span class="text-[14px]">References</span>
+        <span><img src="assets/arrow_link.svg" alt="" class="h-4 dark:invert"></span>
+    </section>
+</section>

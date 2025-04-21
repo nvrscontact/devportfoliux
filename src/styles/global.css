@@ -1,0 +1,170 @@
+:root {
+    --color-mint-500: oklch(0.72 0.11 178);
+    --day-gradient: linear-gradient(90deg, #00d1c7, #008653);
+    --night-gradient: linear-gradient(90deg, #008145, #337aff); 
+    --day-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
+    --night-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
+}
+
+/*****  Degradados de colores  *****/
+.timezone {
+    transition: background 1s ease-in-out;
+    object-fit: contain;
+    color: transparent; /* Hace que el texto tome el degradado */
+}
+.dia {
+    -webkit-background-clip: text;
+    background: var(--day-gradient);
+    background-clip: text;
+}
+.noche {
+    -webkit-background-clip: text;
+    background: var(--night-gradient);
+    background-clip: text;
+}
+
+.rouge-script {
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+    
+  .inter-400 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+
+/*****  Relucient White Animation  *****/
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+.animated_white_basic {
+    background: linear-gradient(30deg, #525252,#525252, #525252, #525252, #ffffff, #ffffff, #525252, #525252, #525252,#525252);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: moveGradient 3s linear infinite;
+    font-family: Manrope;
+}
+
+
+/*****  Scrollbar Cards Projects  *****/
+.scroll-container {
+    width: 100%;
+    max-width: fit-content;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(255,0,0,0.9) ; /* Color de la barra y fondo en Firefox */
+    scroll-behavior: auto;
+    margin: 5px;
+}
+
+/* Scrollbar personalizado para Chrome y Edge */
+.scroll-container::-webkit-scrollbar {
+    width: 0px;
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);    
+}
+
+/* Estilos de las cards */
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+
+/*****  Social Media Icons Dropdown  *****/
+.dropdown_social{ 
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a; 
+    margin-bottom: 20px;    
+}
+.dropdown_social_hover:hover .dropdown_social{
+    display:flex;
+    margin-top: 20px;
+}
+
+
+/*****  Cards Degraded Background  *****/
+.card_degraded_one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center left, rgba(0, 143, 199, 0.5), transparent 30%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+.card_degraded_two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center right, rgba(109, 30, 255, 0.5), transparent 30%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+.card_degraded_three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center left, rgba(255, 28, 134, 0.5), transparent 30%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.scrolls_bar{
+    height: 270px;
+    overflow-y: auto;
+    scrollbar-width: 2px; /* Para Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.1);
+    scroll-behavior: auto;
+}
+
+.scrolls_bar::-webkit-scrollbar {
+    width:2px;
+}
+
+.scrolls_bar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.scrolls_bar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card_degraded_other::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center left, rgba(255, 28, 134, 0.5), transparent 30%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
