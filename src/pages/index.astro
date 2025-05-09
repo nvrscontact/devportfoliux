@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro'; // importar el html
 import Protagonist from '../components/Protagonist.astro';
 import Projects from '../components/Projects.astro';
-import Specialized from '../components/Specialized.astro';
+import Languages from '../components/Languages.astro';
+import Technologies from '../components/Technologies.astro';
+import Soft from '../components/Soft.astro';
 import Experiences from '../components/Experiences.astro';
 import Copyright from '../components/Copyright.astro';
 import Contact from '../components/Contact.astro';
@@ -69,9 +71,11 @@ description="Desarrollo de sitios web con componentes increibles, con habilidade
             </section>
         </section>
 
-        <section class="flex justify-center">
-            <Specialized/>
-        </section>
+        <Technologies/>
+
+        <Languages/>
+        
+        <Soft/>
 
         <section class="h-64 relative md:hidden">
             <section class="card_degraded_two">
