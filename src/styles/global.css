@@ -151,12 +151,7 @@
 }
 
 
-.contenedor {
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
+
   .iluminado {
     position: absolute;
     bottom: -20px; /* Comienza un poco fuera de la vista */
@@ -169,10 +164,6 @@
     pointer-events: none; /* Para que no interfiera con eventos */
   }
   /* Asegúrate de que los textos estén por encima del iluminado */
-  .contenedor p {
-    position: relative;
-    z-index: 1;
-  }
 
 
 
