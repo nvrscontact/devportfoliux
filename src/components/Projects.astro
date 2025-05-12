@@ -1,43 +1,50 @@
 ---
-interface Props{
-    title?: string
-    paragraph?: string
-    width?: string
-    height?: string
-    ground_img?: string
-    ground_height?: string 
-    icon_span_one?: string
-    icon_span_two?: string
-    icon_span_three?: string
-    link?: string
-    link_img?: string
-    shadow?: string
-
- 
-}
-const {title,paragraph,width='w-[190px]',height='h-[265px]', ground_img,ground_height,icon_span_one,icon_span_two,icon_span_three,link,link_img,shadow}  = Astro.props
+import Comp_Projects from './Comp_Projects.astro';
 ---
 
-
-
-<section class=`dark:border-black flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0 `>
-    <section class="dark:border-black flex flex-col text-center border-b border-white/30 h-24 p-2 flew-wrap">
-        <section class="flex justify-center items-center">
-            <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>   
-        </section>
-        <p class="dark:text-black text-[12px] text-[#bebebe] whitespace-normal">{paragraph}</p>
-    </section>
-    <section class="dark:border-black border-b border-white/30 p-[2px] ">
-        <img src={ground_img} alt="" class=`${ground_height}`>
-    </section>
-    <section class="flex justify-between items-center p-[10px] ">
-        <span class="flex gap-2">
-            <img src={icon_span_one} alt="" class="h-[18px]">
-            <img src={icon_span_two} alt="" class="h-[18px]">
-            <img src={icon_span_three} alt="" class="h-[18px]">
-        </span>
-        <span>
-            <a href={link}><img src={link_img} alt="" class="h-[16px] "></a>
-        </span>
-    </section>
-</section>
+<div class="">
+    <div class="flex justify-center">
+        <div class="scroll-container" id="scrollContainer">
+            <div class="flex gap-3 items-center">
+                <div class="card">
+                <Comp_Projects 
+                title='Kovaliov Rest' 
+                paragraph='View menus, schedules, events and make reservations to anybody.' 							
+                ground_img='assets/restaurant.webp'
+                icon_span_one='assets/javascript.png'
+                icon_span_two='assets/tailwind.png'
+                icon_span_three='assets/astro.png'
+                link='https://apple.com'
+                link_img='assets/arrow_link.svg'
+                />
+                </div>
+                <div class="card">
+                <Comp_Projects 
+                title='Heavenly' 
+                paragraph='Social network with encrypted conversations and publication sections' 
+                ground_img='assets/socialmedia.webp'
+                icon_span_one='assets/python.svg'
+                icon_span_two='assets/mongodb.png'
+                icon_span_three='assets/fastapi.svg'
+                ground_height='h-[142px] '
+                link='https://apple.com'
+                link_img='assets/arrow_link.svg'
+                height='h-[285px]'
+                />	
+                </div>
+                <div class="card">
+                <Comp_Projects 
+                title='Modern Train' 
+                paragraph='Get training guides from personal trainers and view progress' 								
+                ground_img='assets/gym.webp'
+                icon_span_one='assets/docker.png'
+                icon_span_two='assets/mongodb.png'
+                icon_span_three='assets/javascript.png'
+                link='https://apple.com'
+                link_img='assets/arrow_link.svg'
+                />	
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>

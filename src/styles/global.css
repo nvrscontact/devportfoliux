@@ -1,7 +1,7 @@
 :root {
     --color-mint-500: oklch(0.72 0.11 178);
-    --day-gradient: linear-gradient(90deg, #f34f73, #c57d39);
-    --night-gradient: linear-gradient(90deg, #008145, #337aff); 
+    --day-gradient: linear-gradient(30deg, #f34f73, #c57d39);
+    --night-gradient: linear-gradient(30deg, #863bff, #44b9f0); 
     --day-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
     --night-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
 }
