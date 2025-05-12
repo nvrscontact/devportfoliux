@@ -38,6 +38,21 @@
   
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 /*****  Relucient White Animation  *****/
 @keyframes moveGradient {
     0% { background-position: 0% 50%; }
@@ -49,9 +64,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: moveGradient 3s linear infinite;
+    animation: moveGradient 5s linear infinite;
     font-family: Manrope;
 }
+
+.animated_white_basic_two {
+    background: linear-gradient(120deg, #ffffff,#ffffff, #ffffff, #ffffff, #757575, #757575, #ffffff, #ffffff, #ffffff,#ffffff);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: moveGradient 5s linear infinite;
+}
+
 
 
 /*****  Scrollbar Cards Projects  *****/

@@ -1,18 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro'; // importar el html
+import Layout from '../layouts/Layout.astro'; 
 import Protagonist from '../components/Protagonist.astro';
-import Languages from '../components/Languages.astro';
+import Projects from '../components/Projects.astro';
 import Technologies from '../components/Technologies.astro';
 import About from '../components/About.astro';
+import Languages from '../components/Languages.astro';
 import Experiences from '../components/Experiences.astro';
-import Copyright from '../components/Copyright.astro';
 import Contact from '../components/Contact.astro';
-import Projects from '../components/Projects.astro';
 ---
 
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
-<main class='text-white'>
-<section class="h-[100%]">
+    <main class='text-white'>
+    <section class="h-[100%]">
     
         <Protagonist/>
 
@@ -41,10 +40,10 @@ import Projects from '../components/Projects.astro';
             </section>
         </section>
 
-            <Contact/>
+        <Contact/>
     
-</section>
-</main>
+    </section>
+    </main>
 </Layout>
 
 
