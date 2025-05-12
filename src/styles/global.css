@@ -189,7 +189,7 @@
 
 
 .scrolls_bar{
-    height: 270px;
+    height: 300px;
     overflow-y: auto;
     scrollbar-width: 2px; /* Para Firefox */
     scrollbar-color: rgba(0, 0, 0, 0.1);
