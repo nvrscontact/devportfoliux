@@ -7,53 +7,75 @@ import About from '../components/About.astro';
 import Languages from '../components/Languages.astro';
 import Experiences from '../components/Experiences.astro';
 import Contact from '../components/Contact.astro';
+import Adicional from '../components/Adicional.astro';
 ---
 
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
-    <main class='text-white'>
-    <section class="h-[100%]">
+<main class='text-white'>
+<section class="h-[100%] flex flex-col">
     
-        <Protagonist/>
+        <section class="flex gap-8 border-b justify-center border-gray-400 py-4 w-full ">
+                <a href="https://applclone.netlify.app/">
+                    <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
+                </a>
+                <a href="https://applclone.netlify.app/">
+                    <img src="assets/apple.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
+                </a>
+                <a href="https://applclone.netlify.app/">
+                    <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
+                </a>
+        </section> 
 
-        <Projects/>
-    
-        <section class="h-64 relative md:hidden">
-              <section class="absolute pt-[70px] flex flex-col gap-5 text-[14px] ">
-                <span class="text-gray-500 pl-36">+14 Projects</span>
-                <span class="text-gray-500 pl-48">13k Users</span>
-                <span class="text-gray-500 pl-36">35 Opinions</span>
+        <section class="flex flex-col md:flex-row md:justify-around md:my-2 md:mt-20">
+
+            <section class="md:order-1">
+                <Protagonist/>
+                <Projects/>
             </section>
-            <section class="card_degraded_one">
+
+            <section class="h-64 relative md:hidden">
+                <section class="absolute pt-[70px] flex flex-col gap-6 text-[14px] ">
+                    <span class="text-gray-500 pl-36">+14 Projects deployed</span>
+                    <span class="text-gray-500 pl-48">13k Users succesufully</span>
+                    <span class="text-gray-500 pl-36">35 Opinions of customers</span>
+                </section>
+                <section class="card_degraded_one"></section>
             </section>
-        </section>
-
-        <Technologies/>
-
-        <About/>
-
-        <Languages/>
-
-        <section class="h-64 relative md:hidden">
-            <section class="absolute pt-[70px] left-16 flex flex-col gap-5 text-[14px]">
-                <span class="text-gray-500 pl-12">+14 Projects</span>
-                <span class="text-gray-500 pl-6">13k Users</span>
-                <span class="text-gray-500 pl-12">35 Opinions</span>
+                
+            <section class="md:order-0">
+                <Technologies/>
+                <About/>
+                <Languages/>
             </section>
-            <section class="card_degraded_two">
+                
+            <section class="h-64 relative md:hidden">
+                <section class="absolute pt-[70px] left-16 flex flex-col gap-6 text-[14px]">
+                    <span class="text-gray-500 pl-12">+14 Projects deployed</span>
+                    <span class="text-gray-500 pl-6">13k Users succesufully</span>
+                    <span class="text-gray-500 pl-9">35 Opinions of customers</span>
+                </section>
+                <section class="card_degraded_two"></section>
             </section>
-        </section>
         
-        <Experiences/>
-        
-        <section class="h-64 relative md:hidden">
-            <section class="card_degraded_three">
+            <section class="md:order-2">
+                <Experiences/>
+                <Adicional/>
             </section>
-        </section>
+            
+            
 
+            
+        
+            <section class="h-64 relative md:hidden">
+                <section class="card_degraded_three"></section>
+            </section>
+        
+        
+        </section>
         <Contact/>
-    
-    </section>
-    </main>
+
+</section>
+</main>
 </Layout>
 
 

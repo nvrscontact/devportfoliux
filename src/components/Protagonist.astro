@@ -2,39 +2,29 @@
 import Buttons from '../components/Buttons.astro';
 ---
 
-    <div class="pt-4 mb-10">
 
-        <section class="text-center">
-            <section class="flex flex-col items-center">
-                <section class="flex justify-center gap-8 border-b border-gray-400 w-[100%] pb-4 mb-6 ">
-                <a href="https://applclone.netlify.app/">
-                    <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
-                </a>
-                <a href="https://applclone.netlify.app/">
-                    <img src="assets/apple.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
-                </a>
-                <a href="https://applclone.netlify.app/">
-                    <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
-                </a>
-            </section>      
-            
-            
-            <section class="flex flex-col mb-3 leading-[45px] text-[42px] tracking-[-3px] font-[Manrope]  text-[#dadada]">
-                <span class="timezone text_colors">The way to</span>
-                <span>create</span>
-                <span class="timezone text_colors">modern</span>
-                <span>and simple</span>
-                <span class="timezone text_colors">websites</span>
-            </section>
-            <section class="grid grid-cols-2 gap-x-2 gap-y-4 ">
-                <Buttons value='Frontend Development'/>
-                <Buttons value='Backend Development'/>
-                <span class="col-span-2">
-                    <Buttons value='Using UX / UI Techniques'/>
-                </span>
+        <section class="mt-12 mb-16 mx-6 md:mt-0 md:mb-36">
+            <section class="flex flex-col ">
+
+                <section class="mb-5">
+                    <span class="text-gray-400  font-serif text-[14px] ">Welcome to</span>
+                    <section class="flex flex-col text-[44px] font-[Manrope] leading-[45px] tracking-tighter relative mt-1 ">
+                       <span>The way to</span>
+                       <span>create modern</span>
+                       <span>and simple</span>
+                        <span>websites</span>
+                        <span class="text-[13px] text-gray-400 absolute bottom-0 right-8 tracking-normal font-serif ">Let's make it happen</span>
+                    </section>
+                </section>
+
+                <section class="grid grid-cols-2 w-fit">
+                    <Buttons value='Frontend Development'/>
+                    <Buttons value='Backend Development'/>
+                    <section class="grid grid-cols-2 w-fit pr-4">
+                        <Buttons value='Using UX / UI Techniques'/>
+                    </section>
+                </section>
+
             </section>
         </section>
-    </section>
-    
-</div>
-    
+            
