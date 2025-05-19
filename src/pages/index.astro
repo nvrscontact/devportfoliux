@@ -12,9 +12,10 @@ import Adicional from '../components/Adicional.astro';
 
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
 <main class='text-white'>
-<section class="h-[100%] flex flex-col">
     
-        <section class="flex gap-8 border-b justify-center border-gray-400 py-4 w-full ">
+
+        <section class="">
+            <section class="flex justify-center gap-8 border-b border-gray-600 py-4 ">
                 <a href="https://applclone.netlify.app/">
                     <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
                 </a>
@@ -24,9 +25,11 @@ import Adicional from '../components/Adicional.astro';
                 <a href="https://applclone.netlify.app/">
                     <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
                 </a>
-        </section> 
+            </section> 
+        </section>
+        
+        <section class="flex flex-col md:flex-row md:justify-around md:mt-20">
 
-        <section class="flex flex-col md:flex-row md:justify-around md:my-2 md:mt-20">
 
             <section class="md:order-1">
                 <Protagonist/>
@@ -35,7 +38,7 @@ import Adicional from '../components/Adicional.astro';
 
             <section class="h-64 relative md:hidden">
                 <section class="absolute pt-[70px] flex flex-col gap-6 text-[14px] ">
-                    <span class="text-gray-500 pl-36">+14 Projects deployed</span>
+                    <span class="text-gray-500 pl-36"> <i class="font--">+14 Projects deployed</i></span>
                     <span class="text-gray-500 pl-48">13k Users succesufully</span>
                     <span class="text-gray-500 pl-36">35 Opinions of customers</span>
                 </section>
@@ -50,7 +53,7 @@ import Adicional from '../components/Adicional.astro';
                 
             <section class="h-64 relative md:hidden">
                 <section class="absolute pt-[70px] left-16 flex flex-col gap-6 text-[14px]">
-                    <span class="text-gray-500 pl-12">+14 Projects deployed</span>
+                    <span class="text-gray-500 pl-12"> <i class="font-serif">s</i>+14 Projects deployed</span>
                     <span class="text-gray-500 pl-6">13k Users succesufully</span>
                     <span class="text-gray-500 pl-9">35 Opinions of customers</span>
                 </section>
@@ -58,23 +61,21 @@ import Adicional from '../components/Adicional.astro';
             </section>
         
             <section class="md:order-2">
+                
                 <Experiences/>
                 <Adicional/>
             </section>
             
             
-
-            
-        
             <section class="h-64 relative md:hidden">
                 <section class="large-blur"></section>
             </section>
-        
+
         
         </section>
+        
         <Contact/>
 
-</section>
 </main>
 </Layout>
 

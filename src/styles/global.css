@@ -23,20 +23,6 @@
     background-clip: text;
 }
 
-.rouge-script {
-    font-family: "Rouge Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-    
-  .inter-400 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-
 
 
 
@@ -196,13 +182,4 @@
     background: radial-gradient(circle at center left, rgba(255, 28, 134, 0.5), transparent 30%);
     mix-blend-mode: screen;
     pointer-events: none;
-}
-
-@font-face {
-    font-family: 'FONTSPRING';
-    src: url('/my_portfolius/public/fonts/FONTSPRINGDEMO-TheSeasonsBold.woff2') format('woff2'),
-    url('/my_portfolius/public/fonts/FONTSPRINGDEMO-TheSeasonsBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
 }
