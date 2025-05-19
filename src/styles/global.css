@@ -41,12 +41,10 @@
   align-items: center;
   z-index: 10;
 
-
-    backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   opacity: 1;
   animation: fadeOutIntro 1s ease forwards 4s;
 }
-
 
 .msg {
     position: absolute;
@@ -55,9 +53,8 @@
 .msg-one{
       animation: aparecerDesaparecer 1s ease-in-out forwards;
 }
-
 .msg-two{
-      animation: aparecerDesaparecer 1s ease-in-out forwards 1.5s;
+      animation: aparecerDesaparecer 2s ease-in-out forwards 1.5s;
 }
 
 @keyframes aparecerDesaparecer {
@@ -66,7 +63,6 @@
   80% { opacity: 1; }
   100% { opacity: 0; transform: translateY(-10px); }
 }
-
 
 @keyframes fadeOutIntro {
   to {
@@ -78,7 +74,7 @@
 .content {
   opacity: 0;
   transition: opacity 2s ease;
-  animation: fadeInContent 3s ease forwards 3s;
+  animation: fadeInContent 4s ease forwards 4s;
   color: white;
 }
 
