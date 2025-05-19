@@ -41,21 +41,23 @@
   align-items: center;
   z-index: 10;
 
-  backdrop-filter: blur(10px);
+
+    backdrop-filter: blur(1px);
   opacity: 1;
-  animation: fadeOutIntro 1s ease forwards 3s;
+  animation: fadeOutIntro 1s ease forwards 4s;
 }
+
 
 .msg {
     position: absolute;
     opacity:0;
 }
 .msg-one{
-      animation: aparecerDesaparecer 2s ease-in-out forwards;
+      animation: aparecerDesaparecer 1s ease-in-out forwards;
 }
 
 .msg-two{
-      animation: aparecerDesaparecer 1s ease-in-out forwards 2.5s;
+      animation: aparecerDesaparecer 1s ease-in-out forwards 1.5s;
 }
 
 @keyframes aparecerDesaparecer {
@@ -75,8 +77,8 @@
 
 .content {
   opacity: 0;
-  transition: opacity 1s ease;
-  animation: fadeInContent 2s ease forwards 4s;
+  transition: opacity 2s ease;
+  animation: fadeInContent 3s ease forwards 3s;
   color: white;
 }
 
