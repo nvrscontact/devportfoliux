@@ -41,10 +41,10 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
-  backdrop-filter: blur(20px); /* Difumina lo de atrás */
+  backdrop-filter: blur(25px); /* Difumina lo de atrás */
 
 opacity: 1;
-  animation: fadeOutIntro 1s ease forwards 4s;
+  animation: fadeOutIntro 3s ease forwards 4s;
 }
 
 .msg {
