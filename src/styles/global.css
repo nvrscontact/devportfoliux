@@ -5,10 +5,7 @@
     --day-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
     --night-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
 }
-*{
-    margin:0;
-    padding:0;
-}
+
 
 /*****  Degradados de colores  *****/
 .timezone {
@@ -44,7 +41,7 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
-backdrop-filter: blur(10px); /* Difumina lo de atrás */
+  backdrop-filter: blur(20px); /* Difumina lo de atrás */
 
 opacity: 1;
   animation: fadeOutIntro 1s ease forwards 4s;
@@ -72,19 +69,6 @@ opacity: 1;
   to {
     opacity: 0;
     visibility: hidden;
-  }
-}
-
-.content {
-  opacity: 0;
-  transition: opacity 2s ease;
-  animation: fadeInContent 4s ease forwards 4s;
-  color: white;
-}
-
-@keyframes fadeInContent {
-  to {
-    opacity: 1;
   }
 }
 
