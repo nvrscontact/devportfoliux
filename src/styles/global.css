@@ -148,7 +148,7 @@ opacity: 1;
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center left, rgb(32, 32, 32), transparent 40%);
+    background: radial-gradient(circle at center left, rgb(32, 32, 32), transparent 60%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -159,7 +159,7 @@ opacity: 1;
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center right, rgb(32, 32, 32), transparent 40%);
+    background: radial-gradient(circle at center right, rgb(32, 32, 32), transparent 60%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -175,8 +175,6 @@ opacity: 1;
     z-index: 0;
     pointer-events: none; /* Para que no interfiera con eventos */
 }
-
-
 
 .scrolls_bar{
     height: 300px;
@@ -198,16 +196,4 @@ opacity: 1;
 .scrolls_bar::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-.card_degraded_other::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center left, rgba(255, 28, 134, 0.5), transparent 30%);
-    mix-blend-mode: screen;
-    pointer-events: none;
 }
