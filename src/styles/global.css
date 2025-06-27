@@ -1,7 +1,9 @@
 :root {
-    --color-mint-500: oklch(0.72 0.11 178);
-    --day-gradient: linear-gradient(30deg, #f34f73, #c57d39);
-    --night-gradient: linear-gradient(30deg, #863bff, #44b9f0); 
+
+    --day_gradient: linear-gradient(30deg, #f34f73, #c57d39);
+    --night_gradient: linear-gradient(30deg, #863bff, #44b9f0); 
+
+
     --day-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
     --night-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
 }
@@ -15,15 +17,14 @@
 }
 .dia {
     -webkit-background-clip: text;
-    background: var(--day-gradient);
+    background: var(--day_gradient);
     background-clip: text;
 }
 .noche {
     -webkit-background-clip: text;
-    background: var(--night-gradient);
+    background: var(--night_gradient);
     background-clip: text;
 }
-
 
 
 
@@ -97,7 +98,7 @@ opacity: 1;
 }
 
 .animated_white_basic_two {
-    background: linear-gradient(12deg, #cccccc,#cccccc, #cccccc, #cccccc, #757575, #757575, #cccccc, #cccccc, #cccccc,#cccccc);
+    background: linear-gradient(12deg, #9b9b9b,#9b9b9b, #9b9b9b, #9b9b9b, #757575, #757575, #9b9b9b, #9b9b9b, #9b9b9b,#9b9b9b);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -148,7 +149,7 @@ opacity: 1;
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center left, rgb(61, 61, 61), transparent 35%);
+    background: radial-gradient(circle at center left, rgb(61, 61, 61), transparent 30%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -159,7 +160,7 @@ opacity: 1;
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center right, rgb(61, 61, 61), transparent 35%);
+    background: radial-gradient(circle at center right, rgb(61, 61, 61), transparent 30%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -177,7 +178,7 @@ opacity: 1;
 }
 
 .scrolls_bar{
-    height: 300px;
+    height: 270px;
     overflow-y: auto;
     scrollbar-width: 2px; /* Para Firefox */
     scrollbar-color: rgba(0, 0, 0, 0.1);
