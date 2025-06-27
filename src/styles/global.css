@@ -97,7 +97,7 @@ opacity: 1;
 }
 
 .animated_white_basic_two {
-    background: linear-gradient(12deg, #ffffff,#ffffff, #ffffff, #ffffff, #757575, #757575, #ffffff, #ffffff, #ffffff,#ffffff);
+    background: linear-gradient(12deg, #cccccc,#cccccc, #cccccc, #cccccc, #757575, #757575, #cccccc, #cccccc, #cccccc,#cccccc);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -148,7 +148,7 @@ opacity: 1;
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center left, rgb(32, 32, 32), transparent 60%);
+    background: radial-gradient(circle at center left, rgb(61, 61, 61), transparent 35%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -159,7 +159,7 @@ opacity: 1;
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center right, rgb(32, 32, 32), transparent 60%);
+    background: radial-gradient(circle at center right, rgb(61, 61, 61), transparent 35%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
