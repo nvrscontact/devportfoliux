@@ -98,12 +98,12 @@ opacity: 1;
 }
 
 .animated_white_basic_two {
-    background: linear-gradient(12deg, #6d6d6d,#6d6d6d, #6d6d6d, #6d6d6d, #949494, #949494, #6d6d6d, #6d6d6d, #6d6d6d,#6d6d6d);
+    background: linear-gradient(12deg, #6d6d6d,#6d6d6d, #6d6d6d, #6d6d6d, #b6b6b6, #b6b6b6, #6d6d6d, #6d6d6d, #6d6d6d,#6d6d6d);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: moveGradient 5s linear infinite;
+    animation: moveGradient 6s linear infinite;
 }
 
 
