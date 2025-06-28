@@ -98,7 +98,7 @@ opacity: 1;
 }
 
 .animated_white_basic_two {
-    background: linear-gradient(12deg, #9b9b9b,#9b9b9b, #9b9b9b, #9b9b9b, #757575, #757575, #9b9b9b, #9b9b9b, #9b9b9b,#9b9b9b);
+    background: linear-gradient(12deg, #6d6d6d,#6d6d6d, #6d6d6d, #6d6d6d, #949494, #949494, #6d6d6d, #6d6d6d, #6d6d6d,#6d6d6d);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
