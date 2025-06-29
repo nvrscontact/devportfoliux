@@ -18,15 +18,18 @@ interface Props{
 const {title,paragraph,width='w-[190px]',height='h-[265px]', ground_img,ground_height,icon_span_one,icon_span_two,icon_span_three,link,link_img,shadow}  = Astro.props
 ---
 
-<section class=`dark:border-black flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0`>
+<section class=` flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0`>
 
-    <section class="dark:border-black flex flex-col text-center border-b border-white/30 h-24 p-2 flew-wrap">
-        <section class="flex justify-center items-center">
-            <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>   
+    <section class=" rounded-t-xl">
+        <section class=" flex flex-col text-center border-b border-white/30 h-24 p-2 flew-wrap">
+            <section class="flex justify-center items-center">
+                <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>   
+            </section>
+            <p class=" text-[12px] text-[#949494] whitespace-normal">{paragraph}</p>
         </section>
-        <p class="dark:text-black text-[12px] text-[#949494] whitespace-normal">{paragraph}</p>
     </section>
-    <section class="dark:border-black border-b border-white/30 p-[2px] ">
+
+    <section class=" border-b border-white/30 p-[2px] ">
         <img src={ground_img} alt="" class=`${ground_height}`>
     </section>
     <section class="flex justify-between items-center p-[10px] ">

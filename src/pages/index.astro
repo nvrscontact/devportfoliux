@@ -1,13 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'; 
-import Protagonist from '../components/Protagonist.astro';
+import Hero from '../components/Hero.astro';
 import Projects from '../components/Projects.astro';
 import Technologies from '../components/Technologies.astro';
-import About from '../components/About.astro';
+import AboutMe from '../components/AboutMe.astro';
 import Languages from '../components/Languages.astro';
 import Experiences from '../components/Experiences.astro';
 import Footer from '../components/Footer.astro';
-import Adicional from '../components/Adicional.astro';
+import Services from '../components/Services.astro';
+import NavBar from '../components/NavBar.astro';
+import Descriptions from '../components/Descriptions.astro';
 ---
 
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
@@ -17,71 +19,38 @@ import Adicional from '../components/Adicional.astro';
             <span class="msg msg-one font-serif">Good monrning</span>
             <span class="msg msg-two font-serif"> this is</span>
         </div> -->
-    
 
-
-        <section class="">
-            <section class="flex justify-center gap-8 border-b border-gray-600 py-4 ">
-                <a href="https://applclone.netlify.app/">
-                    <img src="assets/apple.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
-                </a>
-                <a href="https://rosettiscoffee.netlify.app/">
-                    <img src="assets/coffee.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
-                </a>
-                <a href="https://applclone.netlify.app/">
-                    <img src="assets/arrow_link.svg" alt="" class="cursor-pointer h-[18px] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
-                </a>
-            </section> 
-        </section>
-        
-        <section class="flex flex-col md:flex-row md:justify-around md:mt-20">
-
-            <span class="mt-6 mx-auto text-white/30 text-[10px] ">@ 2.0 version</span>
-
+       
+        <NavBar/>
+       
+        <section class="flex flex-col md:flex-row md:justify-around md:mt-10 md:mb-16 mb-20">
+            
             <section class="md:order-1">
-                <Protagonist/>
+                <Hero/>
                 <Projects/>
             </section>
-
-            <section class="h-64 relative md:hidden">
-                <section class="absolute pt-[70px] flex flex-col gap-6 text-[14px] ">
-                    <span class="text-gray-500 pl-36">+14 Projects deployed</i></span>
-                    <span class="text-gray-500 pl-40">13k Users succesufully</span>
-                    <span class="text-gray-500 pl-36">35 Opinions of customers</span>
-                </section>
-                <section class="large-blur"></section>
-            </section>
-                
+            
+            <Descriptions p_one="pl-36" p_two="pl-40" p_three="pl-36" degraded="large-blur" />
+            
             <section class="md:order-0">
                 <Technologies/>
-                <About/>
+                <AboutMe/>
                 <Languages/>
             </section>
-                
-            <section class="h-64 relative md:hidden">
-                <section class="absolute pt-[70px] left-16 flex flex-col gap-6 text-[14px]">
-                    <span class="text-gray-500 pl-2">+14 Projects deployed</span>
-                    <span class="text-gray-500 ">13k Users succesufully</span>
-                    <span class="text-gray-500 pl-2">35 Opinions of customers</span>
-                </section>
-                <section class="large-blur-right"></section>
-            </section>
-        
-            <section class="md:order-2">
-                
+            
+            <Descriptions p_one="pl-2" p_three="pl-2" another="left-16" degraded="large-blur-right" />
+            
+            <section class="md:order-2">    
                 <Experiences/>
-                <Adicional/>
+                <Services/>
             </section>
-            
-            
-            <section class="h-64 relative md:hidden">
-                <section class="large-blur"></section>
-            </section>
-        
         </section>
+
         
         <Footer/>
-
+        
+      
+        
     </main>
 </Layout>
 
