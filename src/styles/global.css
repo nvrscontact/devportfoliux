@@ -84,9 +84,14 @@ opacity: 1;
   
 /*****  Relucient White Animation  *****/
 @keyframes moveGradient {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 200% 50%; }
+    0% { background-position: 200% 50%; }
+    100% { background-position: 0% 50%; }
 }
+
+/* 
+0% 50%
+200% 50%
+*/
 .animated_white_basic {
     background: linear-gradient(30deg, #525252,#525252, #525252, #525252, #ffffff, #ffffff, #525252, #525252, #525252,#525252);
     background-size: 200% 100%;
@@ -98,7 +103,7 @@ opacity: 1;
 }
 
 .animated_white_basic_two {
-    background: linear-gradient(12deg, #6d6d6d,#6d6d6d, #6d6d6d, #6d6d6d, #c5c5c5, #6d6d6d, #6d6d6d, #6d6d6d,#6d6d6d);
+    background: linear-gradient(90deg, #6d6d6d,#6d6d6d, #6d6d6d, #6d6d6d, #c5c5c5, #6d6d6d, #6d6d6d, #6d6d6d,#6d6d6d);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
