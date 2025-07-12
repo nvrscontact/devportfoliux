@@ -26,7 +26,12 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.inter-700 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /*****  Degradados de colores  *****/
 .timezone {
@@ -118,7 +123,6 @@ opacity: 1;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: moveGradient 5s linear infinite;
-    font-family: Manrope;
 }
 
 .animated_white_basic_two {
@@ -130,6 +134,7 @@ opacity: 1;
     animation: moveGradient 6s linear infinite;
 }
 
+/* intocable */
 
 
 /*****  Scrollbar Cards Projects  *****/
@@ -164,6 +169,8 @@ opacity: 1;
     gap: 10px;
 }
 
+/* intocable */
+
 
 /*****  Cards Degraded Background  *****/
 .large-blur::before {
@@ -190,10 +197,13 @@ opacity: 1;
 }
 
 
+
+/* Experiences Cards */
+
 .scrolls_bar{
     height: 270px;
     overflow-y: auto;
-    scrollbar-width: 2px; /* Para Firefox */
+    scrollbar-width: 2px;
     scrollbar-color: rgba(0, 0, 0, 0.1);
     scroll-behavior: auto;
 }
