@@ -26,7 +26,7 @@ interface Props{
                             <section class="flex items-center gap-2">
                                 <h1 class="text-[16px] ">{company}</h1>
                                 <img src={country} alt="" class="h-[16px] opacity-[0.8] ">
-                                <span class="dark:text-black text-[13px] text-[#C7C7C7]">( {dates} )</span>  
+                                <span class="dark:text-black text-[13px] text-[#C7C7C7] bg-black/50 py-1 px-2"> {dates} </span>  
                             </section>
                             
                             <section class="flex items-center gap-1">
@@ -40,10 +40,10 @@ interface Props{
 
             <section class="dark:text-black text-[#cfcfcf] text-[12px] ">
                 <p class="bg-[rgba(170,170,170,0.4)]">
-                    <p class="pb-2 text-white/70">
+                    <p class="pb-2 text-white/70 inter-200">
                         {paragraph}
                     </p>
-                    <p class="text-white/70">
+                    <p class="text-white/70 inter-200">
                         {paragraph_two}
                     </p>
                 </p>
