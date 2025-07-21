@@ -15,12 +15,13 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
 <main class='text-white'>
     
-   <!--      <div class="intro">
-            <span class="msg msg-one font-serif">Good monrning</span>
-            <span class="msg msg-two font-serif"> this is</span>
+      <!--    <div class="intro">
+            <span class="msg msg-one inter-200">Good Morning</span>
+            <span class="msg msg-two inter-300">welcome to</span>
         </div> -->
 
-       
+       <div class="md:bg-large-blur"></div>
+
         <NavBar/>
        
         <section class="flex flex-col md:flex-row md:mx-20 md:justify-around md:mt-10 md:mb-5 mb-40">
@@ -34,8 +35,8 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
             text_one="Commitment" text_two="Security and Maintenance" text_three="Visual Attraction" />
             
             <section class="md:order-0">
-                <Technologies/>
                 <AboutMe/>
+                <Technologies/>
                 <Languages/>
             </section>
             
