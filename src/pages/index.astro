@@ -15,19 +15,16 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
 <main class='text-white relative h-[100vh] '>
     
-      <!--    <div class="intro">
+     <!--      <div class="intro">
             <span class="msg msg-one inter-200">Good Morning</span>
             <span class="msg msg-two inter-300">welcome to</span>
-        </div> -->
-
-       <div class="bg_large_blur_left"></div>
-        <div class="bg_large_blur_right"></div>
+        </div>  -->
 
         <NavBar/>
        
-        <section class="flex flex-col md:flex-row md:mx-20 md:justify-around md:mt-10 md:mb-5 mb-40">
+        <section class="flex flex-col gap-12 lg:flex-row lg:mx-20 lg:justify-around lg:mt-10 lg:mb-5 mb-40">
             
-            <section class="md:order-1">
+            <section class="lg:order-1">
                 <Hero/>
                 <Projects/>
             </section>
@@ -35,7 +32,7 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
             <Descriptions p_one="pl-36" p_two="pl-40" p_three="pl-36" degraded="large-blur"
             text_one="Commitment" text_two="Security and Maintenance" text_three="Visual Attraction" />
             
-            <section class="md:order-0">
+            <section class="lg:order-0">
                 <AboutMe/>
                 <Technologies/>
                 <Languages/>
@@ -44,7 +41,7 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
             <Descriptions p_one="pl-2" p_three="pl-2" another="left-16" degraded="large-blur-right"
             text_one="+3 Projects deployed" text_two="Good Reviews" text_three="Communication" />
             
-            <section class="md:order-2">    
+            <section class="lg:order-2">    
                 <Experiences/>
                 <Services/>
             </section>
