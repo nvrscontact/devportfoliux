@@ -2,43 +2,44 @@
 import Icons from '../components/subcomponents/Icons.astro';
 ---
 
-
+    <!-- Laptop Version -->
     <div class="hidden lg:flex lg:justify-center ">
        
         <section class="text-center flex flex-col gap-4 mb-4 lg:flex lg:flex-row lg:justify-evenly lg:items-center">
 
-        <section class="flex lg:order-0 items-center justify-between px-4  ">
-            <span class="flex items-center gap-2 text-[11px] text-[#6d6d6d] inter-300 "><img src="assets/spain.svg" alt="" class="h-4">Alacant, Spain</span>
-        </section>
-        
-        <section class="flex lg:ml-3 lg:order-5 gap-3 items-center justify-center ">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nvrscontact@gmail.com"
-                target="_blank" rel="noopener noreferrer">
-                <img src="assets/email.svg" alt="" class="h-[18px] ">
-            </a>
-            <Icons img='assets/linkedin.svg'  link='https://www.linkedin.com/in/nvrscontact/' value='LinkedIn' height='h-[20px] '/>
-            <Icons img='assets/github.svg' link='https://github.com/nvrscontact'  value='Github' height='h-[18px] '/>
-        </section>
-        
-        <span class="hidden lg:flex lg:order-1 border w-16 h-[1px] border-white/10 "></span>
-        
+            <section class="flex lg:order-0 items-center justify-between px-4  ">
+                <span class="flex items-center gap-2 text-[11px] text-[#6d6d6d] inter-300 "><img src="assets/spain.svg" alt="" class="h-4">Alacant, Spain</span>
+            </section>
+            
+            <section class="flex lg:ml-3 lg:order-5 gap-3 items-center justify-center ">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nvrscontact@gmail.com"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="assets/email.svg" alt="" class="h-[18px] ">
+                </a>
+                <Icons img='assets/linkedin.svg' link='https://applclone.netlify.app/' height='h-[14px]' height_md='md:h-[18px]' />
+                <Icons img='assets/github.svg' link='https://applclone.netlify.app/' height='h-[14px]' height_md='md:h-[18px]' />
+            </section>
+            
+            <span class="hidden lg:flex lg:order-1 border w-16 h-[1px] border-white/10 "></span>
+            
 
-        <section class="flex justify-center order-2 lg:order-3 pt-4 border-t border-white/20 inter-300 lg:border-none">
-                <p class="text-[8px] md:text-[11px] text-center text-[#6d6d6d] ">A way to create websites with modern styles without losing their easy accessibility<br> <span class="animated_white_basic_two">If you want to collaborate, write me and develop your idea</span></p>
-        </section>
+            <section class="flex justify-center order-2 lg:order-3 pt-4 border-t border-white/20 inter-300 lg:border-none">
+                    <p class="text-[8px] md:text-[11px] text-center text-[#6d6d6d] ">A way to create websites with modern styles without losing their easy accessibility<br> <span class="animated_white_basic_two">If you want to collaborate, write me and develop your idea</span></p>
+            </section>
 
-         <span class="hidden lg:order-4 lg:flex border w-16 h-[1px] border-white/10 "></span>
+            <span class="hidden lg:order-4 lg:flex border w-16 h-[1px] border-white/10 "></span>
 
         </section>
 
     </div>
 
 
+    <!-- Mobile Version -->
     <div class="flex flex-col justify-center lg:hidden ">
 
-            <section class="text-center flex justify-between gap-4 mb-4 px-10">
+            <section class="flex justify-between mb-4 px-8">
 
-                <div class="flex  items-center justify-between px-4  ">
+                <div class="flex  items-center justify-between  ">
                     <span class="flex items-center gap-2 text-[11px] text-[#6d6d6d] inter-300 "><img src="assets/spain.svg" alt="" class="h-4">Alacant, Spain</span>
                 </div>
                 
@@ -47,13 +48,12 @@ import Icons from '../components/subcomponents/Icons.astro';
                         target="_blank" rel="noopener noreferrer">
                         <img src="assets/email.svg" alt="" class="h-[18px] ">
                     </a>
-                    <Icons img='assets/linkedin.svg'  link='https://www.linkedin.com/in/nvrscontact/' value='LinkedIn' height='h-[20px] '/>
-                    <Icons img='assets/github.svg' link='https://github.com/nvrscontact'  value='Github' height='h-[18px] '/>
+                    <Icons img='assets/linkedin.svg' link='https://applclone.netlify.app/' height='h-[18px]' height_md='md:h-[22px]' />
+                    <Icons img='assets/github.svg' link='https://applclone.netlify.app/' height='h-[18px]' height_md='md:h-[22px]' />
                 </div>
                 
-                
-                
             </section>
+
             <div class="flex justify-center py-4 border-t border-white/20 inter-300">
                 <p class="text-[8px] md:text-[11px] text-center text-[#6d6d6d] ">A way to create websites with modern styles without losing their easy accessibility<br> <span class="animated_white_basic_two">If you want to collaborate, write me and develop your idea</span></p>
             </div>

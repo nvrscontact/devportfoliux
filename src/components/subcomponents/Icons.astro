@@ -2,15 +2,16 @@
 interface Props{
 link?: string
 img?: string
-value?: string
 height?: string
+height_md?: string
+height_lg?: string
 shadow?: string
 }
-const {link,img,value,height='h-[19px]',shadow='drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'} = Astro.props
+const {link,img,height, height_md, height_lg, shadow='drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'} = Astro.props
 ---
 
     <span class="flex text-[16px] gap-5 items-center">
         <a href={link} class="flex flex-col dropdown_social_hover items-center ">
-            <img src={img} alt="" class=`${height} hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] dark:invert`>
+            <img src={img} alt="" class=`${height} ${height_md} ${height_lg} hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]`>
         </a>
     </span>
