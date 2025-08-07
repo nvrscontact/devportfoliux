@@ -1,13 +1,3 @@
-:root {
-
-    --day_gradient: linear-gradient(30deg, #f34f73, #c57d39);
-    --night_gradient: linear-gradient(30deg, #863bff, #44b9f0); 
-
-
-    --day-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
-    --night-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
-}
-
 .inter-100 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -33,42 +23,8 @@
   font-style: normal;
 }
 
-.playfair-400{
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.playfair-600{
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
 
-
-/*****  Degradados de colores  *****/
-.timezone {
-    transition: background 1s ease-in-out;
-    object-fit: contain;
-    color: transparent; /* Hace que el texto tome el degradado */
-}
-.dia {
-    -webkit-background-clip: text;
-    background: var(--day_gradient);
-    background-clip: text;
-}
-.noche {
-    -webkit-background-clip: text;
-    background: var(--night_gradient);
-    background-clip: text;
-}
-
-
-
-
-
-/*****  TEsting  *****/
+/*****  Welcome  *****/
 .intro {
   position: fixed;
   top: 0;
@@ -81,8 +37,7 @@
   align-items: center;
   z-index: 10;
   backdrop-filter: blur(25px); /* Difumina lo de atrás */
-
-opacity: 1;
+  opacity: 1;
   animation: fadeOutIntro 3s ease forwards 4s;
 }
 
@@ -111,25 +66,12 @@ opacity: 1;
   }
 }
 
-
-
-
-
-
-
-
-
-  
 /*****  Relucient White Animation  *****/
 @keyframes moveGradient {
     0% { background-position: 200% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* 
-0% 50%
-200% 50%
-*/
 .animated_white_basic {
     background: linear-gradient(30deg, #525252,#525252, #525252, #525252, #ffffff, #ffffff, #525252, #525252, #525252,#525252);
     background-size: 200% 100%;
@@ -147,8 +89,6 @@ opacity: 1;
     -webkit-background-clip: text;
     animation: moveGradient 6s linear infinite;
 }
-
-/* intocable */
 
 
 /*****  Scrollbar Cards Projects  *****/
