@@ -1,33 +1,20 @@
 ---
 import Buttons from '../components/subcomponents/Buttons.astro';
 ---
-
-        <section class="mt-2 mb-14 ">
-            <section class="flex flex-col ">
-                <section class="flex justify-center gap-1 md:gap-4 mb-8">
-                        <Buttons>
-                            Frontend Development
-                        </Buttons>
-                        <Buttons>
-                            <span class="">Visual Prototypes</span>
-                        </Buttons>
-                        <Buttons>
-                            Using <span class="">UX / UI</span> Techniques
-                        </Buttons>
-                </section>
-
-                <section class="">
-                    <section class="inter-200 text-white/50 flex flex-col items-center text-[38px] md:text-[55px] leading-tight md:leading-[4rem]  ">
-                       <span>Websites with a</span>
-                       <span>visual harmony </span>
-                        <span>that achieves</span>
-                       <span>the objective</span>
-                        <div class="flex items-center gap-4 mt-3 md:mt-0">
-                            <span class="text-[14px]  ">that you customers want</span>
-                        </div>
-                    </section>
-                </section>
-            </section>
+<header class="mt-2 mb-14 ">
+    <section class="flex flex-col ">
+        <section class="flex justify-center gap-1 md:gap-4 mb-8">
+                <Buttons>Frontend Development</Buttons>
+                <Buttons>Visual Prototypes</Buttons>
+                <Buttons>Using UX / UI Techniques</Buttons>
         </section>
-         
- <!-- Websites with a visual harmony that achieves the objective. -->
+        <p class="inter-200 text-center text-white/50 flex flex-col items-center text-[38px] md:text-[55px] leading-tight md:leading-[4rem]  ">
+            Websites with <br>
+            a visual harmony <br>
+            that achieves <br>
+            the objective
+            <span class="text-[14px] mt-3 md:-mt-1 md:text-[16px] ">that you customers want</span>
+        </p>
+    </section>
+</header>
+

@@ -14,22 +14,20 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
 
 <Layout title="Portfoliux - Frontend Portfolio", description="Desarrollo de sitios web con componentes increibles, con habilidades en frontend y backend.">
 <main class='text-white relative h-[100vh] '>
-    
-        <div class="intro">
-            <span class="msg msg-one inter-200">Good Morning</span>
-            <span class="msg msg-two inter-300">and Welcome to</span>
+
+        <div class="intro inter-200">
+            <p class="msg msg-one">Good Morning</p>
+            <p class="msg msg-two">Welcome to</p>
         </div>
 
         <NavBar/>
-       
         <section class="flex flex-col gap-12 lg:flex-row lg:mx-20 lg:justify-around lg:mt-2 lg:mb-5 mb-40">
-            
             <section class="lg:order-1">
                 <Hero/>
                 <Projects/>
             </section>
             
-            <Descriptions p_one="pl-16" p_two="pl-28" p_three="pl-56"
+            <Descriptions p_one="pl-16" p_two="pl-28" p_three="pl-52"
             text_one="Commitment" text_two="Security and Maintenance" text_three="Visual Attraction" />
             
             <section class="lg:order-0">
@@ -38,7 +36,7 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
                 <Languages/>
             </section>
             
-            <Descriptions p_one="pl-56" p_two="pl-32" p_three="pl-20"
+            <Descriptions p_one="pl-52" p_two="pl-32" p_three="pl-20"
             text_one="Good Reviews" text_two="+3 Projects deployed" text_three="Modern Trends" />
             
             <section class="lg:order-2">    
@@ -46,11 +44,7 @@ import Descriptions from '../components/subcomponents/Descriptions.astro';
                 <Services/>
             </section>
         </section>
-
-        
         <Footer/>
-        
-      
     </main>
 </Layout>
 
