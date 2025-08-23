@@ -113,7 +113,7 @@
 /* Experiences Cards */
 
 .scrolls_bar{
-    height: 270px;
+    height: 320px;
     overflow-y: auto;
     scrollbar-width: 2px;
     scrollbar-color: rgba(0, 0, 0, 0.1);
